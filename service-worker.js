@@ -35,29 +35,3 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
-
-// self.addEventListener('activate', function(event) {
-//     console.log("SW activated");
-// });
-
-// self.addEventListener('fetch', function(event) {
-//     console.log("Fetch for : " + event.request.url);
-
-//     event.respondWith(
-//         caches.match(event.request)
-//         .then(function(response) {
-
-//             // we have a copy of the response in our cache, so return it
-//             if (response) {
-//             	console.log("cache hit for:" + event.request.url);
-//                 return response; //no network request necessary
-//             }
-
-//             return fetch(event.request);
-
-//         })
-//         .catch(function(error) {
-//         	console.log("cache catch");
-//         })
-//     );
-// });
