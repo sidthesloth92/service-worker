@@ -4,8 +4,8 @@ console.log("SW startup");
 
 var CACHE_NAME = "my_cache";
 var urlsToCache = [
-  '/css/style.css',
-  '/js/script.js'
+  './css/style.css',
+  './js/script.js'
 ];
 
 self.addEventListener('install', function(event) {
